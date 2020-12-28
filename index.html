@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>WSR || Block chak-chak</title>
+		<link rel="shortcut icon" href="images/ethereum.png" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<header id="top">
+			<div class="header">
+				<a href="index.html" class="header__name">WSR Blockchain</a>
+				<nav class="header__nav">
+					<ul class="header__nav-ul">
+						<li><a href="#how" class="header__nav-ul--li" onclick="link(1);">Как это работает</a></li>
+						<li style="margin: 0 15px;"><a href="#know" class="header__nav-ul--li" onclick="link(2);">Вы должны знать</a></li>
+						<li><a href="#sources" class="header__nav-ul--li" onclick="link(3);">Источники</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="blockchain" id="how">
+			<div>
+				<h2>Что такое блокчейн и как он работает</h2>
+				<p>Технология блокчейн у многих вызывает ассоциацию с биткойном, криптовалютой, майнингом. Блокчейн - это технология которая позволяет хранить любые данные распределенно. Можно сравнить блокчейн с базой данных, отличие лишь в том, что база данных расположенна на одном сервере, тогда, как блокчейн может хранить ваши данные на многих серверах одновременно, что способствует надежности данных от потери и “чистоте информиции” .</p>
+			</div>
+			<img src="images/cripto.png" class="blockchain__img">
+		</section>
+		<section class="know container" id="know">
+			<div class="know__row1">
+				<div class="know__row-block">
+					<h1>Что нужно знать при подготовке к WSR</h1>
+					<p>В 20		19 году при проведении WSR Blockchain нами был использован следующий стек: Geth, web3.js, Solidity и средства web разработки (html, css, js). </p>
+				</div>
+				<div class="know__row-block">
+					<h2>Web3.js - Ethereum JavaScript API</h2>
+					<div style="display: flex; justify-content: center;">
+						<img src="images/web3js.png" class="img blockchain__img" style="  user-select: none;">
+					</div>
+					
+					<p>Web3.js - это API для взаимодействия с блокчейном и смарт-контрактом. Подключается как обычный скрипт к html странице.</p>
+				</div>
+				<div class="know__row-block sources" id="sources">
+					<h1>Источники для изучения</h1>
+					<h2>Geth (Go Ethereum)</h2>
+					<p><a href="https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options" target="_blank">Github</a> - Изучите список команд geth клиента</p>
+					<h2>Web3.js - Ethereum JavaScript API</h2>
+					<p><a href="https://github.com/ethereum/web3.js/" target="_blank">Github</a> - инструкция<br>
+					<a href="https://web3js.readthedocs.io/en/v1.2.8/">ReadTheDocs</a> - документация</p>
+					<h2>Solidity</h2>
+					<p><a href="https://solidity.readthedocs.io/en/v0.6.8/" target="_blank">ReadtTheDocs</a> - документация<br>
+					<a href="https://cryptozombies.io/ru/" target="_blank">CriptoZombies</a> - рекомендуется к изучению</p>
+				</div>
+			</div>
+
+			<div class="know__row2">
+				<div class="know__row-block">
+					<h2>Geth (Go Ethereum)</h2>
+					<div style="display: flex; justify-content: center;">
+						<img src="images/ethereum.png" class="img blockchain__img" style=" user-select: none; ">
+					</div>
+					<p>Geth - это программа, клиент для создания, настройки и работы с блокчейном.  У него много версий, стабильных еще меньше.</p>
+				</div>
+				<div class="know__row-block">
+					<h2>Solidity</h2>
+					<div style="display: flex; justify-content: center;">
+						<img src="images/sol.png" class="img blockchain__img" style=" user-select: none; ">
+					</div>
+					<p>Solidity - язык для написания смарт-контрактов на блокчейн платформе Ethereum </p>
+				</div>
+				<div class="know__row-block">
+					<h2>HTML/CSS/JS</h2>
+					<p>На WSR мы сделали веб-приложение которое может запускаться на любом пк где есть браузер.
+						Также существуют другие решения, например на python которые работают с платформой Ethereum.</p>
+					<div style="display: flex; justify-content: center;">
+						<img src="images/html.png" class="img blockchain__img" style=" user-select: none;">
+					</div>
+				</div>
+			</div>
+		</section>
+		<div style="display: flex; justify-content: center; padding: 15px 0;">
+			<a href="https://github.com/lihaha2" target="__blank" style="text-decoration: none;color: #82899B;text-align: center; padding: 0 15px !important;">Выполнил Михаил (Пушистый) Лихачёв</a>
+		</div>
+		<a href="#top" id="up" onclick="link(0);"><img src="images/up.png" style="width: 30px; position: fixed;left:3%; bottom: 10%;"></a>
+		<div class="preloader" id="preloader">
+			<img src="images/preloader.gif" class="preloader__img">
+		</div>
+		<script type="text/javascript" src="js/preloader.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
